@@ -16,7 +16,7 @@ public class VariableDeathbanEntityListener extends EntityListener {
 	public void onEntityDeath(EntityDeathEvent event) {
 		if(event.getEntity() instanceof Player){
 			Player player = (Player) event.getEntity();
-			plugin.getServer().broadcastMessage(ChatColor.RED + player.getName() + " " + player.getLastDamageCause().getCause());
+			plugin.getServer().broadcastMessage("Entity death " + ChatColor.RED + player.getName() + " " + player.getLastDamageCause().getCause());
 		}
 
 	}
